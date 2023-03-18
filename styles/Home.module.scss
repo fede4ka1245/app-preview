@@ -1,0 +1,69 @@
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    background: #192239;
+    height: 64px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: Gilroy, 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.formHeader {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.button {
+    background: #192239;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all linear 200ms;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+}
+
+.buttonImage {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 12px);
+  left: 15px;
+}
+
+.buttonText {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    flex: 1;
+    color: #FFFFFF;
+}

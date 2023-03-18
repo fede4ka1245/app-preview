@@ -1,0 +1,21 @@
+.planet {
+  background-image: url("./assets/planet.webp"), linear-gradient(180deg, #261C5C 80%, #365191 100%);
+  background-repeat: no-repeat;
+  background-size: 100% auto, 100% 100%;
+  background-position: center top;
+  width: 100%;
+  height: 100%;
+  min-height: max-content;
+}
+
+.galaxy {
+  background-image: url("./assets/galaxy.png");
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-repeat-y: no-repeat;
+  background-position: center top;
+  height: 100%;
+  min-height: max-content;
+  width: 100%;
+  position: relative;
+}
