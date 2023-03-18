@@ -17,6 +17,7 @@ function App({ horoscope }: Props) {
     <Head>
       <title>AlphaSpace</title>
       <meta
+        name="description"
         content={[
           `Рассчитать гороскоп в приложении AlphaSpace`,
           `Имя: ${horoscope?.userInfo.name}`,
