@@ -22,7 +22,7 @@ function App({ horoscope }: Props) {
           `Имя: ${horoscope?.userInfo.name}`,
           `Время: ${horoscope?.userInfo.date}`,
           `Дата: ${horoscope?.userInfo.time}`
-        ].join("'\n'")}
+        ].join(" ")}
         key="desc"
       />
       <meta property="og:title" content={"AlphaSpace"} />
@@ -33,7 +33,7 @@ function App({ horoscope }: Props) {
           `Имя: ${horoscope?.userInfo.name}`,
           `Время: ${horoscope?.userInfo.date}`,
           `Дата: ${horoscope?.userInfo.time}`
-        ].join("'\n'")}
+        ].join(" ")}
       />
       <meta property="og:image" content="https://cdn4.telegram-cdn.org/file/oqgZ0lO6-pQzCqb0BAI9qMmk3oyfGGiNfwEm2l6stDqgXgfDsY0il6C_il2kAdktFj3ImPxMRA90jU7wqFCMp-5F5-hXDim9YD6s-DQmNqUdR8DS2fk5aLDvhtypjVl7j96x901Z3lpBx_xoZzFvFD032_C-C81f9IA2WDxyUCMAPJL5cS8UNMPCInPUW1TIJlzPFBDULi4VN0xalNpsWdETWsev6UBvpYuFi6metGwHYe4LYN0-4B9eb0AM7E598pa-aGVxIw-qZVkveQQv6SMp-tVM-HWsTavGEOtyDz1MBDSAzO98qDPwLqKXecwZoReWqAt7u0N3AUIQMbaHxg.jpg" />
       <meta property="og:site_name" content="AlphaSpace" />
@@ -49,7 +49,7 @@ function App({ horoscope }: Props) {
           `Имя: ${horoscope?.userInfo.name}`,
           `Время: ${horoscope?.userInfo.date}`,
           `Дата: ${horoscope?.userInfo.time}`
-        ].join("'\n'")}
+        ].join(" ")}
       />
     </Head>
     <header className={styles.header}>
