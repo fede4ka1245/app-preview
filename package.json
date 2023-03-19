@@ -17,15 +17,19 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "classnames": "^2.3.2",
+    "crypto": "^1.0.1",
     "date-fns": "^2.29.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "fs": "^0.0.1-security",
     "moment": "^2.29.4",
     "next": "13.2.4",
+    "playwright-aws-lambda": "^0.10.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-input-mask": "^2.0.4",
     "sass": "^1.59.3",
+    "swr": "^2.1.0",
     "typescript": "5.0.2"
   }
 }
