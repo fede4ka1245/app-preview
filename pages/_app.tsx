@@ -11,6 +11,30 @@ interface Props {
   horoscope?: ParsedUrlData
 }
 
+function getJsonLd(horoscope: any) {
+  if (!horoscope) {
+    return {
+      __html: `{}`
+    };
+  }
+
+  return {
+    __html: `{
+      "@context": "https://schema.org/",
+      "name": "AlphaSpace",
+      "image": "https://en.wikipedia.org/wiki/Cat#/media/File:Cat_August_2010-4.jpg",
+      "description": "${[
+      `Рассчитать гороскоп в приложении AlphaSpace`,
+      `Имя: ${horoscope?.userInfo.name}`,
+      `Время: ${horoscope?.userInfo.date}`,
+      `Дата: ${horoscope?.userInfo.time}`
+      ].join(" ")}",
+    }
+  `,
+  };
+}
+
+
 function App({ horoscope }: Props) {
 
   return <Grid display={'flex'} direction={'column'} alignItems={'center'}>
@@ -51,6 +75,11 @@ function App({ horoscope }: Props) {
           `Время: ${horoscope?.userInfo.date}`,
           `Дата: ${horoscope?.userInfo.time}`
         ].join(" ")}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={getJsonLd(horoscope)}
+        key="product-jsonldd"
       />
     </Head>
     <header className={styles.header}>
