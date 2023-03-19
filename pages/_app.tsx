@@ -40,42 +40,11 @@ function App({ horoscope }: Props) {
   return <Grid display={'flex'} direction={'column'} alignItems={'center'}>
     <Head>
       <title>AlphaSpace</title>
-      <meta
-        name={'description'}
-        content={[
-          `Рассчитать гороскоп в приложении AlphaSpace`,
-          `Имя: ${horoscope?.userInfo.name}`,
-          `Время: ${horoscope?.userInfo.date}`,
-          `Дата: ${horoscope?.userInfo.time}`
-        ].join(" ")}
-        key="desc"
-      />
-      <meta property="og:title" content={"AlphaSpace"} />
-      <meta
-        property="og:description"
-        content={[
-          `Рассчитать гороскоп в приложении AlphaSpace`,
-          `Имя: ${horoscope?.userInfo.name}`,
-          `Время: ${horoscope?.userInfo.date}`,
-          `Дата: ${horoscope?.userInfo.time}`
-        ].join(" ")}
-      />
-      {/*<meta property="og:image" content="https://en.wikipedia.org/wiki/Cat#/media/File:Cat_August_2010-4.jpg" />*/}
-      <meta property="og:site_name" content="AlphaSpace" />
-      <meta property="og:url" content={"https://app-preview-eight.vercel.app/"}/>
-      {/*<meta property="twitter:image" content="DsY0il6598pa-aGVxIw-qZVkveQQv6SMp-tVM-HWsTavGEOtyDz1MBDSAzO98qDPwLqKXecwZoReWqAt7u0N3AUIQMbaHxg.jpg" />*/}
-      {/*<meta property="twitter:site" content="@Telegram">*/}
-      {/*<meta property="al:ios:app_store_id" content="686449807" />*/}
-      {/*<meta property="al:ios:app_name" content="Telegram Messenger">*/}
-      <meta
-        name="twitter:description"
-        content={[
-          `Рассчитать гороскоп в приложении AlphaSpace`,
-          `Имя: ${horoscope?.userInfo.name}`,
-          `Время: ${horoscope?.userInfo.date}`,
-          `Дата: ${horoscope?.userInfo.time}`
-        ].join(" ")}
-      />
+      <meta property="og:title" content="Home"/>
+      <meta property="og:description" content="Welcome to my blog!"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://phiilu.com/"/>
+      <meta property="og:image" content="https://phiilu.com/images/og/840e64ab9334b9d5d555c85e0d073179.png"/>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={getJsonLd(horoscope)}
