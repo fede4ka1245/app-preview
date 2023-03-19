@@ -20,14 +20,22 @@ export const getServerSideProps = async (context: any) => {
     };
   }
 
-  const image = await getOgImage(fullUrl + '&isPhoto=true');
+  try {
+    const image = await getOgImage(fullUrl + '&isPhoto=true');
 
-  return {
-    props: {
-      horoscope: horoscope ?? null,
-      image: image ?? null
-    }
-  };
+    return {
+      props: {
+        horoscope: horoscope ?? null,
+        image: image ?? null
+      }
+    };
+  } catch {
+    return {
+      props: {
+        horoscope: horoscope ?? null,
+      }
+    };
+  }
 };
 
 const Horoscope = ({ horoscope, image }: Props) => {

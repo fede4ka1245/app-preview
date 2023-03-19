@@ -61,8 +61,8 @@ function HoroscopeForm({ horoscope, image }: Props) {
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="https://app-preview-eight.vercel.app/"/>
       <meta property="og:image" content={image || '/galaxy.png'} />
-      <meta property="og:image:width" content={'500px'} />
-      <meta property="og:image:height" content={'500px'} />
+      <meta property="og:image:width" content="500" />
+      <meta property="og:image:height" content="500" />
       <meta property="og:title" content={"AlphaSpace"} />
       <meta
         property="og:description"
