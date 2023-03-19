@@ -56,7 +56,8 @@ function App({ horoscope }: Props) {
         `Имя: ${horoscope?.userInfo.name}`,
         `Время: ${horoscope?.userInfo.date}`,
         `Дата: ${horoscope?.userInfo.time}`
-      ].join(" ")}/>
+      ].join("\n")}
+      />
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="https://app-preview-eight.vercel.app/"/>
       <meta property="og:image" content="https://en.wikipedia.org/wiki/Cat#/media/File:Cat_August_2010-4.jpg" />
@@ -68,7 +69,7 @@ function App({ horoscope }: Props) {
           `Имя: ${horoscope?.userInfo.name}`,
           `Время: ${horoscope?.userInfo.date}`,
           `Дата: ${horoscope?.userInfo.time}`
-        ].join(" ")}
+        ].join("\n")}
       />
       {/*<meta property="twitter:image" content="DsY0il6598pa-aGVxIw-qZVkveQQv6SMp-tVM-HWsTavGEOtyDz1MBDSAzO98qDPwLqKXecwZoReWqAt7u0N3AUIQMbaHxg.jpg" />*/}
       {/*<meta property="twitter:site" content="@Telegram">*/}
@@ -81,7 +82,7 @@ function App({ horoscope }: Props) {
           `Имя: ${horoscope?.userInfo.name}`,
           `Время: ${horoscope?.userInfo.date}`,
           `Дата: ${horoscope?.userInfo.time}`
-        ].join(" ")}
+        ].join("\n")}
       />
       <script
         type="application/ld+json"
