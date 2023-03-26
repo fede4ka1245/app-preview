@@ -10,8 +10,7 @@ interface Props {
 
 export const getServerSideProps = async (context: any) => {
   const horoscope = parseHoroscopeUrl(context.resolvedUrl);
-  const fullUrl = (context.req.headers["x-forwarded-proto"] || context.req.connection.encrypted ? "https" : "http") + '://' + context.req.headers.host + context.req.url;
-
+  const fullUrl = process.env.BASE_URL + context.req.url;
   if (context?.query?.isPhoto) {
     return {
       props: {
