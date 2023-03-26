@@ -20,7 +20,7 @@ async function getOgImage(url: string) {
   const page = await browser.newPage();
   await page.setViewportSize({ width: 612, height: 612 });
   await page.goto(url, { waitUntil: 'networkidle' });
-  const buffer = await page.screenshot({ type: 'png' });
+  const buffer = await page.screenshot({ type: 'png', clip: { width: 500, height: 500, x: 56, y: 81 } });
   await browser.close();
   fs.mkdirSync(ogImageDir, { recursive: true });
   fs.writeFileSync(imagePath, buffer);
