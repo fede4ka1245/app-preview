@@ -63,6 +63,8 @@ function HoroscopeForm({ horoscope, image }: Props) {
       <meta property="og:image" content={image || '/galaxy.png'} />
       <meta property="og:image:width" content="500" />
       <meta property="og:image:height" content="500" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={image || '/galaxy.png'} />
       <meta property="og:title" content={"AlphaSpace"} />
       <meta
         property="og:description"
