@@ -15,9 +15,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   await NextCors(req, res, {
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
     origin: '*',
+    preflightContinue: true,
     optionsSuccessStatus: 200,
   });
-
 
   if (req.method === "POST") {
     const { link } = req.body;
