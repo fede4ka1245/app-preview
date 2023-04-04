@@ -16,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return
   }
 
-  const { key } = req.query;
+  const { key } = req.body;
 
   const link = await prisma.link.findFirst({
     where: {
