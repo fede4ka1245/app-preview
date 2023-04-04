@@ -6,7 +6,7 @@ const prisma = new PrismaClient()
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await NextCors(req, res, {
-    methods: ['GET', 'HEAD', 'PUT', 'OPTIONS', 'PATCH', 'POST', 'DELETE'],
+    methods: ['GET', 'POST', 'HEAD', 'PUT', 'OPTIONS', 'PATCH', 'DELETE'],
     origin: '*',
     optionsSuccessStatus: 200,
   });
